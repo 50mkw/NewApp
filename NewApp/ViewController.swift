@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var Label: UILabel!
+    @IBAction func sayHello(_ sender: Any) {
+        Label.text = NSLocalizedString("test", comment: "hello world")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
